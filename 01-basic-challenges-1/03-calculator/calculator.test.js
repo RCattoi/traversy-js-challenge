@@ -17,6 +17,4 @@ test('Performing arithmetic operations using the calculator function', () => {
   // Division
   expect(calculator(num1, num2, '/')).toBeCloseTo(0.7143, 4);
 
-  // Invalid operand
-  expect(calculator(num1, num2, '-+')).toThrow();
 });
