@@ -1,7 +1,11 @@
 function findMissingNumber(arr) {
   // If the array is empty or undefined, return undefined
-  if (!arr || arr.length === 0) {
-    return undefined;
+  if (arr.length === 0) {
+    return 1;
+  }
+  
+  if (arr.length === 1) {
+    return arr[0] === 1 ? 2 : 1;
   }
   // Add 1 to the length of the array to account for the missing number
   const n = arr.length + 1;
